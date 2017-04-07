@@ -1,5 +1,5 @@
 
-#How to use this analysis file?
+# How to use this analysis file?
 
 This dataset contains a "run_analysis.R" file. In order to run this analysis you need to first download data from this [URL](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
@@ -12,12 +12,12 @@ runanalysis('PATH TO YOUR DATA FOLDER')
 
 This should generate a 'tidydata.txt' file in your data folder which contains the dataset tidied by this analysis.
 
-#Methods 
+# Methods 
 
-##runanalysis
+## runanalysis
 This method takes the input of the path where dataset is stored. It also automatically load the data and run the subsequent analysis steps to produce a tidied dataset and saved it in a file called "tidydata.txt". This method executes all the following steps in sequence and thereby produce a new set of tidy data. 
 
-##loaddata
+## loaddata
 What this method does is as following:
 1.Loads all training feature data
 2.Loads all training activity data
@@ -29,12 +29,12 @@ What this method does is as following:
 
 last but not least return the data frame
 
-##extractmeasurements
+## extractmeasurements
 This method extracts the columns whose name contains either "std" or "mean"
 
 
-##tidydata
+## tidydata
 This method creates an independant dataset with the average of each variable for each activity and each subject. In addition, it also insert string "Avg" in the names of the columns to indicate such transform.
 
-##writedata
+## writedata
 This method simply writes the dataframe to a local file on your hard drive.
